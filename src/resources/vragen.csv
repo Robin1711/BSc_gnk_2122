@@ -1,8 +1,6 @@
-Table 1
-;;;;;;
-;Id;Vraag;Ja;Nee;Informatie;Image
-;1;Cardio is goed?;2;3;Extra informatie over cardio…;vraag1-plaatje.jpg
-;2;Zie je huid er mooi bruin uit?;;4;Extra informatie over je huid…;vraag2-plaatje.jpg
-;3;Ben je kaal?;5;;Extra informatie over je haarlijn…;vraag3-plaatje.jpg
-;4;Heb je een lekker buikje?;;;Extra informatie over je vet…;vraag4-plaatje.jpg
-;5;Voelt je middenvoetsbeentje goed?;;;Extra informatie over je middenvoetsbeentje…;vraag5-plaatje.jpg
+Id,Vraag,Ja,Nee,Informatie,Image
+1,Cardio is goed?,2,3,Extra informatie over cardio…,vraag1-plaatje.jpeg,
+2,Zie je huid er mooi bruin uit?,,4,Extra informatie over je huid…,vraag2-plaatje.jpeg,
+3,Ben je kaal?,5,,Extra informatie over je haarlijn…,vraag3-plaatje.jpeg,
+4,Heb je een lekker pokkeltje?,,,Extra informatie over je vet…,vraag4-plaatje.jpeg,
+5,Voelt je middenvoetsbeentje goed?,,,Extra informatie over je middenvoetsbeentje…,vraag5-plaatje.jpeg

@@ -4,6 +4,7 @@ import Home from './views/Home'
 import Information from './views/Information'
 import Result from "./views/Result";
 import Questionnaire from "./views/Questionnaire";
+import Overview from "./views/Overview";
 
 class Navigation extends React.Component {
     render() {
@@ -12,6 +13,7 @@ class Navigation extends React.Component {
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/information" exact component={Information} />
+                    <Route path="/overview" exact component={Overview} />
                     <Route path="/question" exact component={Questionnaire} />
                     <Route path="/result" exact component={Result} />
                 </Switch>
