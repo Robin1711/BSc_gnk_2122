@@ -9,8 +9,9 @@ class Navbar extends React.Component {
                 <div className={"navbar-header"}>
                     <img className="logo-image" src={umcg} alt='logo'/>
                     <ul className={"nav navbar-nav"}>
-                        <li><a href={"home"}>Home</a></li>
+                        <li><a href={"/"}>Home</a></li>
                         <li><a href={"information"}>Information</a></li>
+                        <li><a href={"overview"}>Overview</a></li>
                     </ul>
                 </div>
             </nav>

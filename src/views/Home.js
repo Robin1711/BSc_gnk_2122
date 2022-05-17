@@ -4,6 +4,7 @@ import {withRouter} from 'react-router-dom';
 
 class Home extends React.Component {
 
+
     navigateTo = () => this.props.history.push('/question', {question: "Vraag1?", history: []});
 
     render() {
