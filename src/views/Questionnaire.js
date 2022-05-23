@@ -56,7 +56,7 @@ class Questionnaire extends React.Component {
                     <button value="Nee" onClick={this.navigateToNextQuestion} className="btn">Nee</button>
                 </div>
                 <div>
-                    <button value="Nee" onClick={this.navigateToResults} className="btn">Resultaten</button>
+                    <button value="Results" onClick={this.navigateToResults} className="btn">Resultaten</button>
                 </div>
             </div>
         );
