@@ -25,15 +25,12 @@ class Overview extends React.Component {
                 this.setState({ questions: result.data });
                 this.forceUpdate();
             })
-            .catch((error) => {
-                const myResults = { message:"ERROR", received: error };
-                console.log(myResults)
-            });
+            .catch(err => console.log({ message:"ERROR", error: err }));
     }
 
 
     render() {
-        return ( // (this.state.loading) ? (<div><h1>Loading..</h1></div>) :
+        return (
             <div>
                 <h2>Overview</h2>
                 <p>Hier een lijstje met alle vragen in het project en de references</p>
@@ -47,7 +44,6 @@ class Overview extends React.Component {
             </div>
         );
     }
-
 }
 
 export default Overview;

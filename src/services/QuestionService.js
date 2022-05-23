@@ -8,7 +8,7 @@ export class QuestionService {
 
     constructor() {}
 
-    async loadData() {
+    async loadQuestions() {
         return new Promise(resolve => {
             Papa.parse(csvFile, {
                 delimiter: ',',
@@ -16,21 +16,22 @@ export class QuestionService {
                 header: true,
                 dynamicTyping: true,
                 complete: results => {
-                    console.log(results.data)
                     resolve(results);
                 }
             });
         });
-
-        //     Papa.parsePromise = function (csvFile) {
-        // return new Promise(function (complete, error) {
-        //     Papa.parse(csvFile, {complete, error});
-        // });
     }
 
     async getAllQuestions() {
-        return this.loadData()
+        return this.loadQuestions()
     }
 
-    async getQuestionById() {}
+    async getQuestionById(id) {
+        return this.loadQuestions()
+            .then((result) => {
+                const questions = result.data;
+                return questions.find((q) => q.Id === id)
+            })
+            .catch(err => console.log({ message:"ERROR", error: err }));
+    }
 }

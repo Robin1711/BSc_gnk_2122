@@ -1,11 +1,25 @@
 import React from 'react'
 import '../css/home.css'
 import {withRouter} from 'react-router-dom';
+import {QuestionService} from "../services/QuestionService";
 
 class Home extends React.Component {
+    _questionService = new QuestionService();
+    FIRST_INDEX = 1;
 
+    constructor() {
+        super();
+        this.state = {loading: true}
+        this.navigateTo = this.navigateTo.bind(this)
+    }
 
-    navigateTo = () => this.props.history.push('/question', {question: "Vraag1?", history: []});
+    navigateTo() {
+        this._questionService.getQuestionById(this.FIRST_INDEX)
+            .then((question) => {
+                this.props.history.push('/question', { question: question , history: []});
+            })
+            .catch(err => console.log({ message:"ERROR", error: err }));
+    }
 
     render() {
         return (
