@@ -1,8 +1,4 @@
-Table 1
-;;;;;;
-;Id;Id_vraag;Ja;Nee;;
-;1;;;;;
-;2;;;;;
-;3;;;;;
-;4;;;;;
-;5;;;;;
+Id,Conclusie,Image
+1,Conclusie 1,conclusie1-plaatje.jpeg
+2,Conclusie 2,conclusie2-plaatje.jpeg
+3,Conclusie 3,conclusie3-plaatje.jpeg

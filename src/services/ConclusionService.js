@@ -1,14 +1,14 @@
 import Papa from "papaparse";
-import csvFile from "../resources/mock_vragen.csv"
+import csvFile from "../resources/mock_conclusies.csv"
 
 /**
- * Service for question retrieval from vragen.csv
+ * Service for conclusion retrieval from conclusies.csv
  */
-export class QuestionService {
+export class ConclusionService {
 
     constructor() {}
 
-    async loadQuestions() {
+    async loadConclusions() {
         return new Promise(resolve => {
             Papa.parse(csvFile, {
                 delimiter: ',',
@@ -22,15 +22,15 @@ export class QuestionService {
         });
     }
 
-    async getAllQuestions() {
-        return this.loadQuestions()
+    async getAllConclusions() {
+        return this.loadConclusions()
     }
 
-    async getQuestionById(id) {
-        return this.loadQuestions()
+    async getConclusionById(id) {
+        return this.loadConclusions()
             .then((result) => {
-                const questions = result.data;
-                return questions.find((q) => q.Id === id)
+                const conclusions = result.data;
+                return conclusions.find((q) => q.Id === id)
             })
             .catch(err => console.log({ message:"ERROR", error: err }));
     }
