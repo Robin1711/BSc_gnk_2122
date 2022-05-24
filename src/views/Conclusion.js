@@ -1,23 +1,24 @@
 import React from 'react'
-import '../css/result.css'
+import '../css/conclusion.css'
 
-class Result extends React.Component {
+class Conclusion extends React.Component {
     constructor() {
         super();
         this.state = {loading: true}
     }
     componentDidMount() {
         if (this.props.history.location) {
-            const intermediate = this.props.history.location.state;
-            this.setState({loading: false, history: intermediate.history});
+            const data = this.props.history.location.state;
+            this.setState({loading: false, history: data.history, conclusion: data.conclusion});
         }
     }
 
     render() {
         return ( (this.state.loading) ? (<div><h1>Loading..</h1></div>) :
             <div>
-                <h1>Resultaten</h1>
-                <p>Tja, het wordt helemaal niks.. Sorry...</p>
+                <h1>Conclusie</h1>
+                <img className="conclusion-image" src={require(`../resources/images/${this.state.conclusion.Image}`)} alt='conclusieplaatje'/>
+                <p>{this.state.conclusion.Conclusie}</p>
                 <h2>Uw gegeven antwoorden:</h2>
                 <ul>
                     {this.state.history.map((item, index) => (
@@ -31,5 +32,5 @@ class Result extends React.Component {
     }
 }
 
-export default Result;
+export default Conclusion;
 
