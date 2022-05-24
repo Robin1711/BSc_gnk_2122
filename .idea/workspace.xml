@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="155f3d68-c0d9-4cd9-a812-cac5dcf7c328" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/vragen.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/vragen.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/conclusies.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/mock_conclusies.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/vragen.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/vragen.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/vragen.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ConclusionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ConclusionService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/QuestionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/QuestionService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +79,7 @@
       <workItem from="1652264601503" duration="6102000" />
       <workItem from="1653320806328" duration="8066000" />
       <workItem from="1653351332576" duration="22000" />
-      <workItem from="1653390536706" duration="3253000" />
+      <workItem from="1653390536706" duration="3139000" />
     </task>
     <servers />
   </component>
