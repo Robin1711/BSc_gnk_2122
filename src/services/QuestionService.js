@@ -6,14 +6,32 @@ import csvFile from "../resources/vragen.csv"
  */
 export class QuestionService {
 
-    constructor() {
-        this.state = {}
-        console.log("READING CSV")
+    constructor() {}
+
+    async loadQuestions() {
+        return new Promise(resolve => {
+            Papa.parse(csvFile, {
+                delimiter: ',',
+                download: true,
+                header: true,
+                dynamicTyping: true,
+                complete: results => {
+                    resolve(results);
+                }
+            });
+        });
     }
 
-    async loadData() {}
+    async getAllQuestions() {
+        return this.loadQuestions()
+    }
 
-    async getAll() {}
-
-    async getQuestionById() {}
+    async getQuestionById(id) {
+        return this.loadQuestions()
+            .then((result) => {
+                const questions = result.data;
+                return questions.find((q) => q.Id === id)
+            })
+            .catch(err => console.log({ message:"ERROR", error: err }));
+    }
 }

@@ -9,9 +9,7 @@ class Result extends React.Component {
     componentDidMount() {
         if (this.props.history.location) {
             const intermediate = this.props.history.location.state;
-            this.setState({loading: false, history: intermediate.history}
-                , () => { console.log("saved!"); console.log(this.state)}
-            );
+            this.setState({loading: false, history: intermediate.history});
         }
     }
 
@@ -23,8 +21,8 @@ class Result extends React.Component {
                 <h2>Uw gegeven antwoorden:</h2>
                 <ul>
                     {this.state.history.map((item, index) => (
-                        <li key={item.question}>
-                            <span>{item.question + " : " + item.answer}</span>
+                        <li key={item.question.Id}>
+                            <span>{item.question.Vraag + " : " + item.answer}</span>
                         </li>
                     ))}
                 </ul>
