@@ -11,7 +11,7 @@ export class ConclusionService {
     async loadConclusions() {
         return new Promise(resolve => {
             Papa.parse(csvFile, {
-                delimiter: ',',
+                delimiter: '\t',
                 download: true,
                 header: true,
                 dynamicTyping: true,
@@ -27,8 +27,10 @@ export class ConclusionService {
     }
 
     async getConclusionById(id) {
+        console.log("CONCLUSIONSERVICE")
         return this.loadConclusions()
             .then((result) => {
+                console.log(result)
                 const conclusions = result.data;
                 return conclusions.find((q) => q.Id === id)
             })

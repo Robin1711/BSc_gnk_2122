@@ -12,7 +12,7 @@ class Questionnaire extends React.Component {
         super();
         this.state = {loading: true}
         this.navigateToNext = this.navigateToNext.bind(this)
-        this.navigateToResults = this.navigateToResults.bind(this)
+        this.navigateToConclusion = this.navigateToConclusion.bind(this)
     }
 
     componentDidMount() {
@@ -22,27 +22,38 @@ class Questionnaire extends React.Component {
         }
     }
 
-    navigateToResults() {
-        this.props.history.push('/result', {history: this.state.history});
+    navigateToQuestion(question_Id, answer) {
+        this._questionService.getQuestionById(question_Id)
+            .then((next_question) => {
+                this.setState({loading: false, question: next_question, history: this.state.history});
+            })
+            .catch(err => console.log({ message:"ERROR", error: err }));
+    }
+
+    navigateToConclusion(conclusion_Id) {
+        this._conclusionService.getConclusionById(conclusion_Id)
+            .then((conclusion) => {
+                console.log(conclusion)
+                this.props.history.push('/conclusion', {history: this.state.history, conclusion: conclusion});
+            })
+            .catch(err => console.log({ message:"ERROR", error: err }));
     }
 
     navigateToNext(event) {
+        // Get next question/conclusion Id
         const next = event.target.value === "Ja" ? this.state.question.Ja : this.state.question.Nee;
-        console.log(next)
         const isQuestion = next.slice(0, 1) === "V";
         const next_Id = Number(next.slice(1));
-        console.log({parsed: next, question: isQuestion, Id: next_Id})
-        if (isQuestion) {
-            this._questionService.getQuestionById(next_Id)
-                .then((next_question) => {
-                    const newHistory = this.state.history.concat({id: this.state.question.Id, question: this.state.question, answer: event.target.value})
-                    this.setState({loading: false, question: next_question, history: newHistory});
-                })
-                .catch(err => console.log({ message:"ERROR", error: err }));
-        } else {
-            const newHistory = this.state.history.concat({id: this.state.question.Id, question: this.state.question, answer: event.target.value})
-            this.setState({history: newHistory}, () => this.navigateToResults())
-        }
+        // Append answer to history
+        this.setState({history: this.state.history.concat({id: this.state.question.Id, question: this.state.question, answer: event.target.value})},
+            () => {
+                if (isQuestion) {
+                    this.navigateToQuestion(next_Id)
+                } else {
+                    // isConclusion
+                    this.navigateToConclusion(next_Id)
+                }
+            })
     }
 
     render() {
