@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="155f3d68-c0d9-4cd9-a812-cac5dcf7c328" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/css/questionnaire.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/example.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/QuestionService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/QuestionService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/question.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Overview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Questionnaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Questionnaire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Result.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Result.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,8 @@
       <workItem from="1652215016086" duration="385000" />
       <workItem from="1652216269902" duration="12393000" />
       <workItem from="1652264601503" duration="6102000" />
-      <workItem from="1653320806328" duration="6288000" />
+      <workItem from="1653320806328" duration="8066000" />
+      <workItem from="1653351332576" duration="22000" />
     </task>
     <servers />
   </component>

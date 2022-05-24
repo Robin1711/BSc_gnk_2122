@@ -20,10 +20,7 @@ class Overview extends React.Component {
         this._questionService
             .getAllQuestions()
             .then((result) => {
-                const myResults = { message:"RECEIVED", received: result };
-                console.log(myResults)
-                this.setState({ questions: result.data });
-                this.forceUpdate();
+                this.setState({ questions: result.data }, () => this.forceUpdate());
             })
             .catch(err => console.log({ message:"ERROR", error: err }));
     }

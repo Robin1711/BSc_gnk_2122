@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/information.css'
+import '../css/questionnaire.css'
 import {withRouter} from "react-router-dom";
 import {QuestionService} from "../services/QuestionService";
 
@@ -45,12 +45,10 @@ class Questionnaire extends React.Component {
                 <div>
                     <h1>Questionnaire</h1>
                     <p>{this.state.question.Informatie}</p>
+                    <img className="information-image" src={require(`../resources/images/${this.state.question.Image}`)} alt='informatieplaatje'/>
                     <h2>{this.state.question.Vraag}</h2>
                     <button value="Ja" onClick={this.navigateToNextQuestion} className="btn">Ja</button>
                     <button value="Nee" onClick={this.navigateToNextQuestion} className="btn">Nee</button>
-                </div>
-                <div>
-                    <button value="Results" onClick={this.navigateToResults} className="btn">Resultaten</button>
                 </div>
             </div>
         );
