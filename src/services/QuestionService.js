@@ -1,8 +1,8 @@
 import Papa from "papaparse";
-import csvFile from "../resources/mock_vragen.csv"
+import csvFile from "../resources/vragen.tsv"
 
 /**
- * Service for question retrieval from vragen.csv
+ * Service for question retrieval from vragen.tsv
  */
 export class QuestionService {
 
@@ -11,7 +11,7 @@ export class QuestionService {
     async loadQuestions() {
         return new Promise(resolve => {
             Papa.parse(csvFile, {
-                delimiter: ',',
+                delimiter: '\t',
                 download: true,
                 header: true,
                 dynamicTyping: true,

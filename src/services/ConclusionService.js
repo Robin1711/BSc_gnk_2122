@@ -1,8 +1,8 @@
 import Papa from "papaparse";
-import csvFile from "../resources/mock_conclusies.csv"
+import csvFile from "../resources/conclusies.tsv"
 
 /**
- * Service for conclusion retrieval from conclusies.csv
+ * Service for conclusion retrieval from conclusies.tsv
  */
 export class ConclusionService {
 
