@@ -1,14 +1,7 @@
-Id	Vraag	Ja	Nee	Informatie	Image								
-1	Is het een regulairetachycardie	V2	V3	A	vraag1-plaatje.jpeg								
-2	Zijn de P toppen zichtbaar	V4	C1	B	vraag1-plaatje.jpeg								
-3	Zijn de P toppen zichtbaar	C5	C6	C	vraag1-plaatje.jpeg								
-4	Is de atriale frequentie groter dan de ventriculaire frequentie	C2	V5	D	vraag1-plaatje.jpeg								
-5	Beoordeel het RP interval	V6	C3	E	vraag1-plaatje.jpeg								
-6	Is RP kleiner of groter dan 70 msec	C5	C4	F	vraag1-plaatje.jpeg								
-													
-													
-													
-													
-													
-													
-													
+"Id"	"Vraag"	"Ja"	"Nee"	"Informatie"	"Image"
+"1"	"Is het een regulairetachycardie"	"V2"	"V3"	"A"	"vraag1-plaatje.jpeg"
+"2"	"Zijn de P toppen zichtbaar"	"V4"	"C1"	"B"	"vraag1-plaatje.jpeg"
+"3"	"Zijn de P toppen zichtbaar"	"C5"	"C6"	"C"	"vraag1-plaatje.jpeg"
+"4"	"Is de atriale frequentie groter dan de ventriculaire frequentie"	"C2"	"V5"	"D"	"vraag1-plaatje.jpeg"
+"5"	"Beoordeel het RP interval"	"V6"	"C3"	"E"	"vraag1-plaatje.jpeg"
+"6"	"Is RP kleiner of groter dan 70 msec"	"C5"	"C4"	"F"	"vraag1-plaatje.jpeg"
