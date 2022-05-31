@@ -1,7 +1,0 @@
-﻿Id;Vraag;Ja;Nee;Kort ;Lang;Informatie;Image;;ID;Conclusie;Informatie;Image
-1;Is het een regulairetachycardie;V2;V3;;;;;;1;AVNRT;;
-2;Zijn de P toppen zichtbaar;V4;C1;;;;;;2;Atriaal flutter/ atriaal tachycardie;;
-3;Zijn de P toppen zichtbaar;C5;C6;;;;;;3;Atriaal tachycardie/ Atipische avnrt;;
-4;Is de atriale frequentie groter dan de ventriculaire frequentie;C2;V5;;;;;;4;AVRT/ AVNRT/ Atriaal tachycardie;;
-5;Beoordeel het RP interval;;;V6;C3;;;;5;A tachycardie / flutter/ multifocale;;
-6;Is RP kleiner of groter dan 70 msec;;;C5;C4;;;;6;boezem fibrileren;;

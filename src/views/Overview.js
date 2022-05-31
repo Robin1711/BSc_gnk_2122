@@ -46,16 +46,18 @@ class Overview extends React.Component {
                 <ul>
                     {this.state.questions?.map((item, index) => (
                         <li key={item.Id}>
-                            <span>{item.Id + ", " + item.Vraag + ", " + item.Ja + ", " + item.Nee}</span>
-                        </li>
+                            <span>{`
+                            ${item.Id}, ${item.Vraag}, ${item.Ja}, ${item.Nee}${item.Informatie ? ", " + item.Informatie : ""}${item.Image ? ", " + item.Image : ""}
+                            `}</span></li>
                     ))}
                 </ul>
                 <p>Hier een lijstje met alle conclusies in het project en de references</p>
                 <ul>
                     {this.state.conclusions?.map((item, index) => (
                         <li key={item.Id}>
-                            <span>{item.Id + ", " + item.Conclusie}</span>
-                        </li>
+                            <span>{`
+                            ${item.Id}, ${item.Conclusie}${item.Informatie ? ", " + item.Informatie : ""}${item.Image ? ", " + item.Image : ""}
+                            `}</span></li>
                     ))}
                 </ul>
             </div>
