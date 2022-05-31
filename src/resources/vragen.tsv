@@ -1,6 +1,7 @@
-Id	Vraag	Ja	Nee	Informatie	Image
-1	Cardio is goed?	V2	V3	Extra informatie over cardio…	vraag1-plaatje.jpeg
-2	Zie je huid er mooi bruin uit?	C1	V4	Extra informatie over je huid…	vraag2-plaatje.jpeg
-3	Ben je kaal?	V5	C2	Extra informatie over je haarlijn…	vraag3-plaatje.jpeg
-4	Heb je een lekker pokkeltje?	C1	C3	Extra informatie over je vet…	vraag4-plaatje.jpeg
-5	Voelt je middenvoetsbeentje goed?	C3	C2	Extra informatie over je middenvoetsbeentje…	vraag5-plaatje.jpeg
+Id	Vraag	Ja	Nee	Kort 	Lang	Informatie	Image					
+1	Is het een regulairetachycardie	V2	V3									
+2	Zijn de P toppen zichtbaar	V4	C1									
+3	Zijn de P toppen zichtbaar	C5	C6									
+4	Is de atriale frequentie groter dan de ventriculaire frequentie	C2	V5									
+5	Beoordeel het RP interval			V6	C3							
+6	Is RP kleiner of groter dan 70 msec			C5	C4							
