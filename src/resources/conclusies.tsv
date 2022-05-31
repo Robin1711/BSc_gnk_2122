@@ -1,7 +1,7 @@
-Id	Conclusie	Image
-1	AVNRT	vraag1-plaatje.jpeg
-2	Atriaal flutter/ atriaal tachycardie	vraag1-plaatje.jpeg
-3	Atriaal tachycardie/ Atipische avnrt	vraag1-plaatje.jpeg
-4	AVRT/ AVNRT/ Atriaal tachycardie	vraag1-plaatje.jpeg
-5	A tachycardie / flutter/ multifocale	vraag1-plaatje.jpeg
-6	boezem fibrileren	vraag1-plaatje.jpeg
+Id	Conclusie	Informatie	Image
+1	AVNRT		vraag1-plaatje.jpeg
+2	Atriaal flutter/ atriaal tachycardie	B	
+3	Atriaal tachycardie/ Atipische avnrt	B	vraag1-plaatje.jpeg
+4	AVRT/ AVNRT/ Atriaal tachycardie		
+5	A tachycardie / flutter/ multifocale	C	vraag1-plaatje.jpeg
+6	boezem fibrileren	C	

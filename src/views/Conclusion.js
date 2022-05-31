@@ -17,8 +17,9 @@ class Conclusion extends React.Component {
         return ( (this.state.loading) ? (<div><h1>Loading..</h1></div>) :
             <div>
                 <h1>Conclusie</h1>
-                <img className="conclusion-image" src={require(`../resources/images/${this.state.conclusion.Image}`)} alt='conclusieplaatje'/>
-                <p>{this.state.conclusion.Conclusie}</p>
+                {this.state.conclusion.Image ? <img className="conclusion-image" src={require(`../resources/images/${this.state.conclusion.Image}`)} alt='conclusieplaatje'/> : <span/>}
+                {this.state.conclusion.Conclusie ? <p>{this.state.conclusion.Conclusie}</p> : <span/>}
+                {this.state.conclusion.Informatie ? <p>{this.state.conclusion.Informatie}</p> : <span/>}
                 <h2>Uw gegeven antwoorden:</h2>
                 <ul>
                     {this.state.history.map((item, index) => (
