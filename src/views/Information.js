@@ -6,7 +6,7 @@ class Information extends React.Component {
     render() {
         return (
             <div className="base">
-                <h2>Information</h2>
+                <h2>Informatie</h2>
                 <p>Hier een prachtige paragraaf met wat informatie over jullie project</p>
                 <img className="stroomschema-image" src={stroomschema} alt='Stroomschema'/>
             </div>

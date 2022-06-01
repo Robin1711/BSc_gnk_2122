@@ -25,8 +25,8 @@ class Home extends React.Component {
         return (
             <div className="base">
                 <h1>Home</h1>
-                <h3>This is the homepage</h3>
-                <button onClick={this.navigateTo} className="btn">Start Questionaire</button>
+                <p>This is the homepage</p>
+                <button className="startbutton" onClick={this.navigateTo}>Start Questionaire</button>
             </div>
         );
     }
