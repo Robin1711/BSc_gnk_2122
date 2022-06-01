@@ -1,20 +1,18 @@
 import React from 'react'
-import '../css/navbar.css'
+import '../css/header.css'
 import umcg from "../resources/images/logo-umcg.png";
 
 class Navbar extends React.Component {
     render() {
         return (
-            <nav className={"navbar navbar-default"}>
-                <div className={"navbar-header"}>
-                    <img className="logo-image" src={umcg} alt='logo'/>
-                    <ul className={"nav navbar-nav"}>
-                        <li><a href={"/"}>Home</a></li>
-                        <li><a href={"information"}>Information</a></li>
-                        <li><a href={"overview"}>Overview</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div className="list-container">
+                <ul className="menu">
+                    <li><img className="logo-image" src={umcg} alt='logo'/></li>
+                    <li><a href={"/"}>Home</a></li>
+                    <li><a href={"information"}>Information</a></li>
+                    <li><a href={"overview"}>Overview</a></li>
+                </ul>
+            </div>
         );
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/overview.css'
+import '../css/base.css'
 import {QuestionService} from "../services/QuestionService";
 import {ConclusionService} from "../services/ConclusionService";
 
@@ -40,7 +40,7 @@ class Overview extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="base">
                 <h2>Overview</h2>
                 <p>Hier een lijstje met alle vragen in het project en de references</p>
                 <ul>
