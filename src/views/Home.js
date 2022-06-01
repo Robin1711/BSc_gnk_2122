@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/home.css'
+import '../css/base.css'
 import {withRouter} from 'react-router-dom';
 import {QuestionService} from "../services/QuestionService";
 
@@ -23,7 +23,7 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="base">
                 <h1>Home</h1>
                 <h3>This is the homepage</h3>
                 <button onClick={this.navigateTo} className="btn">Start Questionaire</button>

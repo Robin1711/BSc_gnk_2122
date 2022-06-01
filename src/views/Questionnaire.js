@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/questionnaire.css'
+import '../css/base.css'
 import {withRouter} from "react-router-dom";
 import {QuestionService} from "../services/QuestionService";
 import {ConclusionService} from "../services/ConclusionService";
@@ -58,15 +58,13 @@ class Questionnaire extends React.Component {
 
     render() {
         return ( (this.state.loading) ? (<div><h1>Loading..</h1></div>) :
-            <div>
-                <div>
-                    <h1>Questionnaire</h1>
-                    <p>{this.state.question.Informatie ? this.state.question.Informatie : ""}</p>
-                    {this.state.question.Image ? <img className="information-image" src={require(`../resources/images/${this.state.question.Image}`)} alt='informatieplaatje'/> : <span/>}
-                    <h3>{this.state.question.Vraag ? this.state.question.Vraag : ""}</h3>
-                    <button value="Ja" onClick={this.navigateToNext} className="btn">Ja</button>
-                    <button value="Nee" onClick={this.navigateToNext} className="btn">Nee</button>
-                </div>
+            <div className="base">
+                <h1>Questionnaire</h1>
+                <p>{this.state.question.Informatie ? this.state.question.Informatie : ""}</p>
+                {this.state.question.Image ? <img className="information-image" src={require(`../resources/images/${this.state.question.Image}`)} alt='informatieplaatje'/> : <span/>}
+                <h3>{this.state.question.Vraag ? this.state.question.Vraag : ""}</h3>
+                <button value="Ja" onClick={this.navigateToNext} className="btn">Ja</button>
+                <button value="Nee" onClick={this.navigateToNext} className="btn">Nee</button>
             </div>
         );
     }

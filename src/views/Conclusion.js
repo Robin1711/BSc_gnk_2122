@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/conclusion.css'
+import '../css/base.css'
 
 class Conclusion extends React.Component {
     constructor() {
@@ -15,7 +15,7 @@ class Conclusion extends React.Component {
 
     render() {
         return ( (this.state.loading) ? (<div><h1>Loading..</h1></div>) :
-            <div>
+            <div className="base">
                 <h1>Conclusie</h1>
                 {this.state.conclusion.Image ? <img className="conclusion-image" src={require(`../resources/images/${this.state.conclusion.Image}`)} alt='conclusieplaatje'/> : <span/>}
                 {this.state.conclusion.Conclusie ? <p>{this.state.conclusion.Conclusie}</p> : <span/>}

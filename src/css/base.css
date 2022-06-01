@@ -1,0 +1,30 @@
+.base {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-bottom: 100px
+}
+
+.conclusion-image {
+    /*height: 40vmin;*/
+    pointer-events: none;
+    width: 300px;
+    height: auto;
+}
+
+.stroomschema-image {
+    height: 40vmin;
+    pointer-events: none;
+    /*max-height: 400px;*/
+    max-width: 400px;
+}
+
+.information-image {
+    /*height: 40vmin;*/
+    pointer-events: none;
+    width: 500px;
+    height: auto;
+}
+
