@@ -41,7 +41,7 @@ class Overview extends React.Component {
     render() {
         return (
             <div className="base">
-                <h2>Overview</h2>
+                <h2>Overzicht</h2>
                 <p>Hier een lijstje met alle vragen in het project en de references</p>
                 <ul>
                     {this.state.questions?.map((item, index) => (

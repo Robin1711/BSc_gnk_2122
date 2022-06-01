@@ -63,8 +63,10 @@ class Questionnaire extends React.Component {
                 <p>{this.state.question.Informatie ? this.state.question.Informatie : ""}</p>
                 {this.state.question.Image ? <img className="information-image" src={require(`../resources/images/${this.state.question.Image}`)} alt='informatieplaatje'/> : <span/>}
                 <h3>{this.state.question.Vraag ? this.state.question.Vraag : ""}</h3>
-                <button value="Ja" onClick={this.navigateToNext} className="btn">Ja</button>
-                <button value="Nee" onClick={this.navigateToNext} className="btn">Nee</button>
+                <ul>
+                    <li><button className="janeebutton" value="Ja" onClick={this.navigateToNext}>Ja</button></li>
+                    <li><button className="janeebutton" value="Nee" onClick={this.navigateToNext}>Nee</button></li>
+                </ul>
             </div>
         );
     }

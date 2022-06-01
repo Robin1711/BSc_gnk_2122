@@ -28,3 +28,60 @@
     height: auto;
 }
 
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 15px;
+    font-family: "PT Serif";
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.startbutton {
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: lighter;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: black;
+}
+
+.startbutton:hover {
+    background-color: lightblue;
+    color: black;
+    cursor: pointer;
+}
+
+.janeebutton {
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: lighter;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+}
+
+.janeebutton:hover {
+    background-color: lightblue;
+    color: black;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+ul li {
+    display: inline-block;
+    min-width: 12rem;
+    text-align: center;
+}
