@@ -29,6 +29,7 @@ class Home extends React.Component {
                 </div>
                 <div className="content-container">
                     <p className="regular-paragraph">Welcome to our interactive ECG tool. This is the homepage. Click on start to make use of our ECG tool.</p>
+                    <br/>
                     <button className="startbutton" onClick={this.navigateTo}>Start ECG tool</button>
                 </div>
             </div>

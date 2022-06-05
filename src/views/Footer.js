@@ -6,7 +6,7 @@ class Footer extends React.Component {
     render() {
         return (
             <div className='footer'>
-                <p>Bsc Project:  </p>
+                <p className="footer-paragraph">Interactive ECG tool</p>
             </div>
         );
     }

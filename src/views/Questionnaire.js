@@ -69,22 +69,34 @@ class Questionnaire extends React.Component {
                         <h1>Questionnaire</h1>
                     </div>
                     <div className="content-container">
-                        <p>{this.state.question.Informatie ? this.state.question.Informatie : ""}</p>
-                        {this.state.question.Image ? <img className="information-image"
-                                                          src={require(`../resources/images/${this.state.question.Image}`)}
-                                                          alt='informatieplaatje'/> : <span/>}
-                        <h3>{this.state.question.Vraag ? this.state.question.Vraag : ""}</h3>
-                        <ul>
-                            <li>
+                        {(this.state.question.Informatie || this.state.question.Image) &&
+
+                            <div className="row">
+                                <div className="column">
+                                    <p>{this.state.question.Informatie ? this.state.question.Informatie : ""}</p>
+                                </div>
+                                <div className="column">
+                                    {this.state.question.Image ? <img className="information-image"
+                                                                      src={require(`../resources/images/${this.state.question.Image}`)}
+                                                                      alt='informatieplaatje'/> : <span/>}
+                                </div>
+                            </div>
+                        }
+                        <div className="question-container">
+                            <h2>{this.state.question.Vraag ? this.state.question.Vraag : ""}</h2>
+                        </div>
+                        <div className="question-container">
+                            <span className="janeebutton-container">
                                 <button className="janeebutton" value="Ja" onClick={this.navigateToNext}>Ja</button>
-                            </li>
-                            <li>
-                                <button className="janeebutton" value="Nee" onClick={this.navigateToNext}>Nee</button>
-                            </li>
-                        </ul>
+                            </span>
+                            <span className="janeebutton-container">
+                                <button className="janeebutton" value="Nee" onClick={this.navigateToNext}>Ja</button>
+                            </span>
+                        </div>
                     </div>
                 </div>
-        );
+        )
+            ;
     }
 }
 

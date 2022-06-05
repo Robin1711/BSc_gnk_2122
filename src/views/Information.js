@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/base.css'
-import stroomschema from "../resources/images/stroomschema.png";
+import stroomschema from "../resources/images/StroomschemaECG.png";
 
 class Information extends React.Component {
     render() {
@@ -10,7 +10,14 @@ class Information extends React.Component {
                     <h1>Information</h1>
                 </div>
                 <div className="content-container">
-                    <p>Hier een prachtige paragraaf met wat informatie over jullie project</p>
+                    <p>
+                        Together with Tim Koldenhof, we created an algorithm for assessing ECG's. This method is not
+                        scientifically proven to be accurate. Therefore, only use it as learning material.
+                        <br/>
+                        <br/>
+                        This ECG tool is made by:<br/>
+                        Guido Feringa, Lars Zandbergen, Danny Luu, Jara Meijer, Isa van Sambeek.
+                    </p>
                     <img className="stroomschema-image" src={stroomschema} alt='Stroomschema'/>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 .footer {
     background-color: royalblue;
-    height:50px;
+    height:60px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -9,8 +9,8 @@
     z-index: 999;
 }
 
-p {
-    font-size: 15px;
+.footer-paragraph {
+    font-size: 18px;
     color: midnightblue;
     text-align: right;
     padding-right: 20px;

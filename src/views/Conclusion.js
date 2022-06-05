@@ -6,6 +6,7 @@ class Conclusion extends React.Component {
         super();
         this.state = {loading: true}
     }
+
     componentDidMount() {
         if (this.props.history.location) {
             const data = this.props.history.location.state;
@@ -14,21 +15,29 @@ class Conclusion extends React.Component {
     }
 
     render() {
-        return ( (this.state.loading) ? (<div><h1>Loading..</h1></div>) :
-            <div className="base">
-                <h1>Conclusie</h1>
-                {this.state.conclusion.Image ? <img className="conclusion-image" src={require(`../resources/images/${this.state.conclusion.Image}`)} alt='conclusieplaatje'/> : <span/>}
-                {this.state.conclusion.Conclusie ? <p>{this.state.conclusion.Conclusie}</p> : <span/>}
-                {this.state.conclusion.Informatie ? <p>{this.state.conclusion.Informatie}</p> : <span/>}
-                <h2>Uw gegeven antwoorden:</h2>
-                <ul>
-                    {this.state.history.map((item, index) => (
-                        <li key={item.question.Id}>
-                            <span>{item.question.Vraag + " : " + item.answer}</span>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+        return ((this.state.loading) ? (<div><h1>Loading..</h1></div>) :
+                <div className="base">
+                    <div className="title-container">
+                        <h1>Conclusion</h1>
+                    </div>
+                    <div className="content-container">
+                        {this.state.conclusion.Image ? <img className="conclusion-image"
+                                                            src={require(`../resources/images/${this.state.conclusion.Image}`)}
+                                                            alt='conclusieplaatje'/> : <span/>}
+                        {this.state.conclusion.Conclusie ? <h3>{this.state.conclusion.Conclusie}</h3> : <span/>}
+                        {this.state.conclusion.Informatie ? <p>{this.state.conclusion.Informatie}</p> : <span/>}
+                        <br/>
+                        <br/>
+                        <h4>Uw gegeven antwoorden:</h4>
+                        <ol>
+                            {this.state.history.map((item, index) => (
+                                <li key={item.question.Id}>
+                                    <p>{item.question.Vraag + "   :   " + item.answer}</p>
+                                </li>
+                            ))}
+                        </ol>
+                    </div>
+                </div>
         );
     }
 }
