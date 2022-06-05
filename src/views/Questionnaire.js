@@ -90,7 +90,7 @@ class Questionnaire extends React.Component {
                                 <button className="janeebutton" value="Ja" onClick={this.navigateToNext}>Ja</button>
                             </span>
                             <span className="janeebutton-container">
-                                <button className="janeebutton" value="Nee" onClick={this.navigateToNext}>Ja</button>
+                                <button className="janeebutton" value="Nee" onClick={this.navigateToNext}>Nee</button>
                             </span>
                         </div>
                     </div>
