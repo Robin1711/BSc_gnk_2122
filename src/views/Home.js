@@ -24,9 +24,13 @@ class Home extends React.Component {
     render() {
         return (
             <div className="base">
-                <h1>Home</h1>
-                <p>This is the homepage</p>
-                <button className="startbutton" onClick={this.navigateTo}>Start Questionaire</button>
+                <div className="title-container">
+                    <h1>Interactive ECG tool</h1>
+                </div>
+                <div className="content-container">
+                    <p className="regular-paragraph">Welcome to our interactive ECG tool. This is the homepage. Click on start to make use of our ECG tool.</p>
+                    <button className="startbutton" onClick={this.navigateTo}>Start ECG tool</button>
+                </div>
             </div>
         );
     }

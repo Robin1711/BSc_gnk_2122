@@ -24,42 +24,44 @@ class Overview extends React.Component {
         this._questionService
             .getAllQuestions()
             .then((result) => {
-                this.setState({ questions: result.data }, () => this.forceUpdate());
+                this.setState({questions: result.data}, () => this.forceUpdate());
             })
-            .catch(err => console.log({ message:"ERROR", error: err }));
+            .catch(err => console.log({message: "ERROR", error: err}));
     }
 
     async fetchConclusions() {
         this._conclusionService
             .getAllConclusions()
             .then((result) => {
-                this.setState({ conclusions: result.data }, () => this.forceUpdate());
+                this.setState({conclusions: result.data}, () => this.forceUpdate());
             })
-            .catch(err => console.log({ message:"ERROR", error: err }));
+            .catch(err => console.log({message: "ERROR", error: err}));
     }
 
     render() {
         return (
-            <div className="base">
-                <h2>Overzicht</h2>
-                <p>Hier een lijstje met alle vragen in het project en de references</p>
-                <ul>
-                    {this.state.questions?.map((item, index) => (
-                        <li key={item.Id}>
-                            <span>{`
-                            ${item.Id}, ${item.Vraag}, ${item.Ja}, ${item.Nee}${item.Informatie ? ", " + item.Informatie : ""}${item.Image ? ", " + item.Image : ""}
-                            `}</span></li>
-                    ))}
-                </ul>
-                <p>Hier een lijstje met alle conclusies in het project en de references</p>
-                <ul>
-                    {this.state.conclusions?.map((item, index) => (
-                        <li key={item.Id}>
+            <div>
+                <div className="title-container">
+                    <h1>Overzicht</h1>
+                </div>
+                <div className="content-container">
+                    <p className="regular-paragraph">Hier een lijstje met alle vragen in het project en de references</p>
+                    <ul className="overview-list">
+                        {this.state.questions?.map((item, index) => (
+                            <li key={item.Id}>
+                            <span>{`${item.Id}, ${item.Vraag}, ${item.Ja}, ${item.Nee}${item.Informatie ? ", " + item.Informatie : ""}${item.Image ? ", " + item.Image : ""}`}</span></li>
+                        ))}
+                    </ul>
+                    <p className="regular-paragraph">Hier een lijstje met alle conclusies in het project en de references</p>
+                    <ul className="overview-list">
+                        {this.state.conclusions?.map((item, index) => (
+                            <li key={item.Id}>
                             <span>{`
                             ${item.Id}, ${item.Conclusie}${item.Informatie ? ", " + item.Informatie : ""}${item.Image ? ", " + item.Image : ""}
                             `}</span></li>
-                    ))}
-                </ul>
+                        ))}
+                    </ul>
+                </div>
             </div>
         );
     }

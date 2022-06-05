@@ -9,8 +9,8 @@ class Navbar extends React.Component {
                 <ul className="menu">
                     <li><img className="logo-image" src={umcg} alt='logo'/></li>
                     <li><a href={"/"}>Home</a></li>
-                    <li><a href={"information"}>Informatie</a></li>
-                    <li><a href={"overview"}>Overzicht</a></li>
+                    <li><a href={"information"}>Information</a></li>
+                    {/*<li><a href={"overview"}>Overzicht</a></li>*/}
                 </ul>
             </div>
         );

@@ -1,11 +1,28 @@
-.base {
+.title-container {
     position: absolute;
-    top: 150px;
+    /*background-color: powderblue;*/
+    top: 130px;
     left: 0;
-    padding-left: 100px;
-    padding-right: 150px;
-    padding-bottom: 100px
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
 }
+
+.content-container {
+    position: absolute;
+    top: 190px;
+    bottom:50px;
+    left: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+}
+
 
 .conclusion-image {
     /*height: 40vmin;*/
@@ -29,12 +46,17 @@
 }
 
 h1 {
+    display: inline;
     font-size: 40px;
     font-weight: bolder;
+    padding-left: 100px;
+    color: midnightblue;
+    vertical-align: middle;
 }
 
 p {
     font-size: 15px;
+    color: midnightblue;
     font-family: "PT Serif";
 }
 
@@ -84,4 +106,14 @@ ul li {
     display: inline-block;
     min-width: 12rem;
     text-align: center;
+}
+
+.overview-list {
+    padding: 0;
+}
+
+.regular-paragraph {
+    color: midnightblue;
+    text-align: left;
+    padding-right: 0px;
 }
