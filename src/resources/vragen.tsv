@@ -1,7 +1,14 @@
 Id	Vraag	Ja	Nee	Informatie	Image
-1	Is het een regulairetachycardie	V2	V3	A	
-2	Zijn de P toppen zichtbaar	V4	C1		vraag1-plaatje.jpeg
-3	Zijn de P toppen zichtbaar	C5	C6		
-4	Is de atriale frequentie groter dan de ventriculaire frequentie	C2	V5	A	vraag1-plaatje.jpeg
-5	Beoordeel het RP interval	V6	C3	D	vraag1-plaatje.jpeg
-6	Is RP kleiner of groter dan 70 msec	C5	C4	B	
+1	Zijn de QRS complexen smal? 	V2	C1		
+2	Is het ritme regelmatig?	V6	V3	Tip: gebruik twee RR intervallen om te kijken of de afstand tussen de complexen gelijk is. Gebruik hiervoor een passer of een stuk papier waar je zelf strepen op kan zetten.	FotoV2.png
+3	Zijn er P toppen zichtbaar?	V4	C2	Tip: bij atriumfibrilleren kan de willekeurige activiteit uit de boezem soms lijken op P toppen. Deze activiteit is echter willekeurig en deze “P toppen” wisselen in vorm en frequentie.	FotoV3.png
+4	Zien de P toppen er altijd hetzelfde uit?	V5	C3	"Tip: de beste plek om de morfologie van P toppen te beoordelen is in afleiding II en V1
+Tip 2: de morfologie van een P top die in het QRS complex valt is moeilijk te boordelen omdat je tegelijktijdig de elektrische activiteit van de boezems en de kamers ziet."	FotoV4.png
+5	Frequentie P toppen rond de 300/min (elke groot blokje)?	C9	C10		
+6	Zijn er P toppen zichtbaar?	V7	C4	Tip: P toppen kunnen soms ook na het QRS complex vallen. Goed zoeken dus. 	FotoV6.png
+7	Atriale frequentie groter dan ventriculaire? 	V5	V8	Atriale frequentie groter dan ventriculaire. Meer P toppen dan QRS complexen. Atriale frequentie hetzelfde als de ventriculaire. Evenveel P toppen als QRS complexen.	FotoV7.png
+8	Zit de P top direct na/in het QRS complex?	C4	V9	P Top direct na het QRS complex. Zit vast aan het einde van het QRS complex. RP <70ms. Tip: P toppen die vlak na of in het QRS complex vallen zijn vaak lastig te zien. Indien mogelijk vergelijk het ECG met een ECG in sinusritme. De P top kan verstopt zitten in het QRS complex of het begint van het ST segment, dit ziet er dan vaak net wat anders uit dan in sinusritme. 	FotoV8.png
+9	Zit de P top iets na het QRS complex?	C5	V10	P Top na het QRS complex. RP > 70ms. Bijna 2 kleine hokjes tussen het begin van het QRS complex tot het begin van de P top.	FotoV9.png
+10	Is  de morfologie van de P top normaal?	C6	V11	"Tip: beoordeel de morfologie in afleiding II en V1. 
+De P top hoort in II positief te zijn en in V1 eerst positief en daarna negatief of overwegend negatief. "	FotoV10.png
+11	Is de ventriculaire frequentie tussen de 180-250/min? 	C7	C8		
